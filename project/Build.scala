@@ -8,8 +8,9 @@ object ApplicationBuild extends Build {
   val appVersion      = "0.1.0"
 
   val appDependencies = Seq(
+    jdbc,
     "org.squeryl" %% "squeryl" % "0.9.5-6",
-    "postgresql" % "postgresql" % "9.2-1003.jdbc4",
+    "postgresql" % "postgresql" % "9.1-901.jdbc4",
     "org.mockito" % "mockito-core" % "1.9.5",
     // Including updated version of H2 drivers because
     // there's an issue with the one Play uses by default
