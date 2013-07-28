@@ -2,7 +2,7 @@ package models
 
 import scala.language.implicitConversions
 
-import DeployTrackDb._
+import DBSchema._
 
 import org.squeryl.KeyedEntity
 import org.squeryl.PrimitiveTypeMode._
