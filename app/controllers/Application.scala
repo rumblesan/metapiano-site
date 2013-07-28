@@ -6,23 +6,23 @@ import play.api.mvc._
 object Application extends Controller {
 
   def about = Action {
-    Ok("Submitted")
+    Ok(views.html.about())
   }
 
   def write = Action {
-    Ok(views.html.index())
+    Ok(views.html.write())
   }
 
   def submit = Action {
-    Ok("Submitted")
+    Ok(views.html.submit())
   }
 
   def poems = Action {
-    Ok("Poems")
+    Ok(views.html.poems())
   }
 
   def stream = Action {
-    Ok("Stream")
+    Ok(views.html.stream())
   }
 
 }
