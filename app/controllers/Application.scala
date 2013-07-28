@@ -4,9 +4,25 @@ import play.api._
 import play.api.mvc._
 
 object Application extends Controller {
-  
-  def index = Action {
-    Ok(views.html.index("metapiano-site is ready to roll!!"))
+
+  def about = Action {
+    Ok("Submitted")
   }
-  
+
+  def write = Action {
+    Ok(views.html.index())
+  }
+
+  def submit = Action {
+    Ok("Submitted")
+  }
+
+  def poems = Action {
+    Ok("Poems")
+  }
+
+  def stream = Action {
+    Ok("Stream")
+  }
+
 }

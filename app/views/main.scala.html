@@ -1,10 +1,10 @@
-@(title: String)(content: Html)
+@(content: Html)
 
 <!DOCTYPE html>
 
 <html>
     <head>
-        <title>@title</title>
+        <title>Meta Piano</title>
 
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/bootstrap.min.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/bootstrap-glyphicons.css")">
@@ -17,6 +17,26 @@
 
     </head>
     <body>
+
+        <div class='navbar'>
+            <a class='navbar-brand' href='/'>Meta-Piano</a>
+            <ul class='nav navbar-nav'>
+                <li>
+                    <a href='/about'>About</a>
+                </li>
+                <li>
+                    <a href='/stream'>Stream</a>
+                </li>
+                <li class='active'>
+                    <a href='/write'>Write</a>
+                </li>
+                <li>
+                    <a href='/poems'>Poems</a>
+                </li>
+            </ul>
+        </div>
+
         @content
+
     </body>
 </html>
