@@ -1,3 +1,4 @@
+@(poems: List[Poem])
 
 @main {
 
@@ -9,6 +10,13 @@
             Poems
         </div>
 
+        <div class='col-lg-12'>
+            <ul>
+            @for(poem <- poems) {
+                <li>@poem.text</li>
+            }
+            </ul>
+        </div>
 
     </div>
 
