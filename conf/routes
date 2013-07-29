@@ -10,5 +10,7 @@ POST    /submit                     controllers.Application.submit
 GET     /poems                      controllers.Application.poems
 GET     /stream                     controllers.Application.stream
 
+GET     /endpoint/poems/latest      controllers.Poems.latest(latestId: Long = 0)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

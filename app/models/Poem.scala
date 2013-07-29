@@ -23,6 +23,13 @@ object Poem {
     ).headOption
   }
 
+  def retrieveLatest(lastId: Long = 0): List[Poem] = inTransaction {
+    from(poems)(p =>
+      where(p.id gt lastId)
+      select(p)
+    ).toList
+  }
+
   def retrieveAll(): List[Poem] = inTransaction {
     from(poems)(select(_)).toList
   }
