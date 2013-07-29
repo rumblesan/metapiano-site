@@ -11,11 +11,11 @@
         </div>
 
         <div class='col-lg-12'>
-            <ul>
             @for(poem <- poems) {
-                <li>@poem.text</li>
+                <div class='row'>
+                    <div class='col-lg-12 poem'>@poem.text</div>
+                </div>
             }
-            </ul>
         </div>
 
     </div>
